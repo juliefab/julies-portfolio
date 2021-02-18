@@ -7,12 +7,24 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Blog Post</title>
-    <meta name="description" content="" />
+    <title>Hello Blog</title>
+    <meta name="description" content="jfinch blog" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/blog-post.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/basic-layout.css" />
     <link rel="stylesheet" href="css/basic-styles.css" />
     <link rel="stylesheet" href="css/text-styles.css" />
+    <link rel="stylesheet" href="css/blog-styles.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <script
+      src="https://kit.fontawesome.com/d62aceebe7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -22,6 +34,90 @@
       </p>
     <![endif]-->
 
-    <!-- <script src="" async defer></script> -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo"><img src="img/jf-3d_vibe.png" alt="logo" /></div>
+        <div class="name"><h1>Jfinch</h1></div>
+
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article class="main">
+        <div class="featured">
+          <h3>Featured Blog</h3>
+
+          <img class="featured-image" src="img/moving-pictures.png" />
+
+          <p>
+            <strong>Brief:</strong>
+            Design a logo for an established film company called “Moving
+            Pictures” Logo must include a sense of movement and speed.
+            <strong>My Solution:</strong>
+            Incorporate typography that includes a sense of movement. Treat the
+            type so it resembles an emblem on a race car.
+          </p>
+
+          <a class="card-button" href="post.html"
+            >Read More <i class="fas fa-chevron-right"></i
+          ></a>
+        </div>
+        <!-- <div class="container"> -->
+      </article>
+      <aside class="aside aside-1">
+        <figure>
+          <img class="bio" src="img/julie-plastic.jpg" alt="jfinch" />
+          <figcaption>A good egg.</figcaption>
+        </figure>
+        <div class="social-apps">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-list-link" href="https://codepen.io/juliefab">
+                <i class="fab fa-codepen"></i>
+              </a>
+            </li>
+
+            <li class="social-list-item">
+              <a class="social-list-link" href="https://j-finch.com">
+                <i class="fab fa fa-user"></i>
+              </a>
+            </li>
+
+            <li class="social-list-item">
+              <a class="social-list-link" href="https://github.com/juliefab">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- end aside 1 -->
+      <aside class="aside aside-2">
+        <h3>Recent Projects</h3>
+        <ul class="recent">
+          <li>
+            <a class="card-button" href="post-2.html"
+              >Bestcase LLC <i class="fas fa-chevron-right"></i
+            ></a>
+          </li>
+          <li>
+            <a class="card-button" href="post-3.html"
+              >af-chicago.org <i class="fas fa-chevron-right"></i
+            ></a>
+          </li>
+          <li>
+            <a class="card-button" href="post-4.html"
+              >Lincoln Park<i class="fas fa-chevron-right"></i
+            ></a>
+          </li>
+        </ul>
+      </aside>
+      <footer class="footer">&copy;2021</footer>
+    </div>
+    <!-- end of wrapper -->
+    <!-- <script src="" async defer>scripts coming later</script> -->
   </body>
 </html>

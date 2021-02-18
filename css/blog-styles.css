@@ -1,0 +1,11 @@
+.featured {
+  /* Step 1: Set display to grid */
+  display: grid;
+  /* Step 2: setup rows amd columns */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.featured-image {
+  width: 86%;
+  padding-top: 4%;
+}

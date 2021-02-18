@@ -1,0 +1,183 @@
+/* media queries 
+@media(max-width: 320px;)
+@media (min-width: 901px;)
+@media (min-width:600px) and(max-width:900px) */
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  /* text-align: center; */
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  /* background: tomato; */
+}
+
+.main {
+  text-align: left;
+  /* background: deepskyblue; */
+}
+
+.aside-1 {
+  /* background: gold; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aside-2 {
+  /* background: hotpink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figcaption {
+  text-align: center;
+}
+/* Navigation styles */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding-left: 0px;
+  list-style: none;
+  margin: 0;
+  /* background: rgb(87, 92, 94); */
+  border-bottom: solid 1px;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.navigation a:hover {
+  background-color: #9f9f9f;
+  transition: 0.5s;
+}
+
+/* Projects */
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 75px;
+  grid-auto-flow: dense;
+  height: 420px;
+  overflow: hidden;
+}
+
+/* contains the projects gallery */
+.container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* header plus nav on tablets responsive styles */
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+  /* body {
+    padding: 2em 2em 2em 2em;
+  } */
+}
+/* END   Navigation styles */
+
+/* flex styles for responsive layout in the main asides Header footer  */
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1;
+    text-align: center;
+  }
+  aside.aside.aside-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+  }
+  figcaption {
+    padding-top: 1em;
+    text-align: center;
+  }
+}
+
+/* larger than tablet */
+@media all and (min-width: 1425px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+  body {
+    padding: 2em 10em 2em 10em;
+  }
+  aside.aside.aside-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+  }
+  aside.aside.aside-1 figcaption {
+    padding-top: 1em;
+    text-align: center;
+  }
+  h2.lrg-heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+/* @media (max-width: 320px) {
+  article .main {
+    overflow: hidden;
+  }
+} */

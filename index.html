@@ -8,11 +8,23 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Hello</title>
-    <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+
+    <meta name="description" content="jfinch blog" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/basic-layout.css" />
     <link rel="stylesheet" href="css/basic-styles.css" />
     <link rel="stylesheet" href="css/text-styles.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <script
+      src="https://kit.fontawesome.com/d62aceebe7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -21,19 +33,147 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <header></header>
-    <section>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
+
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo"><img src="img/jf-3d_vibe.png" alt="logo" /></div>
+        <div class="name"><h1>Jfinch</h1></div>
+
+        <nav>
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article class="main">
+        <div class="greeting"><h2>Hello</h2></div>
+
+        <p>
+          I’m a front-end developer/designer looking for a new role in an
+          exciting company. I focus on writing accessible HTML, using modern CSS
+          practices and writing clean JavaScript. I can adapt to whatever tools
+          are required. I’m based in Chicago, IL but I’m happy working remotely
+          and have experience in remote teams.
+        </p>
+        <p>
+          I've done work for a variety of companies, B2B, B2C and Non-profit.
+          I'm constantly learning and keeping up to date on the latest in
+          Technology and Design. Check out my
+          <a href="https://www.behance.net/Juliefabfinch">behance portfolio.</a>
+        </p>
+        <!-- <div class="container"> -->
+        <div class="container">
+          <div>
+            <img src="img/moving-images.png" title="Logo" />
+          </div>
+          <div class="vertical">
+            <img src="img/cinlegal1.png" title="WordPress" />
+          </div>
+          <div class="horizontal">
+            <img src="img/olivio.png" />
+          </div>
+          <!-- <div><img src="img/everything1.png" /></div> -->
+          <div>
+            <img src="img/reception.png" title="email" />
+          </div>
+          <div class="big">
+            <img src="img/refresh2go1.png" title="WordPress" />
+          </div>
+          <div><img src="img/phashionlogos.jpg" title="Logo"/ ></div>
+          <div class="vertical">
+            <img src="img/everything1.png" title="Print editorial" />
+          </div>
+          <div><img src="img/webflow.jpg" title="Drupal-UX-Site Map" /></div>
+          <div class="horizontal">
+            <img src="img/money1.png" title="Graphic Design" />
+          </div>
+          <div>
+            <img
+              src="img/web_page_display_mockups3-1024x682.png"
+              title="Drupal Site"
+            />
+          </div>
+          <div class="big">
+            <img src="img/PizzaBox_MockUp.jpg" title="Graphic Package Design" />
+          </div>
+          <div>
+            <img src="img/postcard-5-5x8-5-P3.png" title="Graphic Design" />
+          </div>
+          <div class="horizontal">
+            <img src="img/stampspage1.jpg" title="Graphic Design" />
+          </div>
+          <div>
+            <img src="img/Space-Oddities-Chicago-4.png" title="HTML-CSS" />
+          </div>
+          <div class="big">
+            <img src="img/mh-whymyhorizon-2016.jpg" title="WordPress" />
+          </div>
+          <div>
+            <img
+              src="img/tfss-f899cebd-f50d-4206-9e86-22dcb3f50852-1410279607.png"
+            />
+          </div>
+          <div class="vertical">
+            <img src="img/gr-julie.jpg" />
+          </div>
+          <div class="big"><img src="img/wil.png" /></div>
+          <div class="big"><img src="img/pre-school-site.png" /></div>
+        </div>
+        <!-- </div> -->
+      </article>
+      <aside class="aside aside-1">
+        <figure>
+          <img class="bio" src="img/julie-plastic.jpg" alt="jfinch" />
+          <figcaption>A good egg.</figcaption>
+        </figure>
+        <div class="social-apps">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-list-link" href="https://codepen.io/juliefab">
+                <i class="fab fa-codepen"></i>
+              </a>
+            </li>
+
+            <li class="social-list-item">
+              <a class="social-list-link" href="https://j-finch.com">
+                <i class="fab fa fa-user"></i>
+              </a>
+            </li>
+
+            <li class="social-list-item">
+              <a class="social-list-link" href="https://github.com/juliefab">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- end aside 1 -->
+      <aside class="aside aside-2">
+        <h3>Recent Projects</h3>
+        <ul class="recent">
+          <li>
+            <a class="card-button" href="post-2.html"
+              >Bestcase LLC <i class="fas fa-chevron-right"></i
+            ></a>
+          </li>
+          <li>
+            <a class="card-button" href="post-3.html"
+              >af-chicago.org <i class="fas fa-chevron-right"></i
+            ></a>
+          </li>
+          <li>
+            <a class="card-button" href="post-4.html"
+              >Lincoln Park <i class="fas fa-chevron-right"></i
+            ></a>
+          </li>
         </ul>
-      </nav>
-    </section>
-
-    <main><</main>
-
-    <footer>I am a footer</footer>
-    <!-- <script src="" async defer></script> -->
+      </aside>
+      <footer class="footer">&copy;2021</footer>
+    </div>
+    <!-- end of wrapper -->
+    <!-- <script src="" async defer>scripts coming later</script> -->
   </body>
 </html>

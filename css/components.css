@@ -1,0 +1,31 @@
+.card-button {
+  border: solid 1px #000000;
+  padding: 0.7rem 1rem;
+  margin-bottom: 2rem;
+  color: #000000;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.card-button:hover {
+  background-color: #9f9f9f;
+  transition: 0.5s;
+}
+ul.recent {
+  list-style: none;
+  padding: 10px;
+}
+ul.recent li {
+  padding: 20px;
+}
+
+ul.social-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+}
+li.social-list-item {
+  padding: 1em;
+}
