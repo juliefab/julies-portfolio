@@ -3,6 +3,10 @@
 @media (min-width: 901px;)
 @media (min-width:600px) and(max-width:900px) */
 
+@import url("basic-styles.css");
+@import url("text-styles.css");
+@import url("components.css");
+
 .wrapper {
   display: flex;
   flex-flow: row wrap;

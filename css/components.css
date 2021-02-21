@@ -29,3 +29,6 @@ ul.social-list {
 li.social-list-item {
   padding: 1em;
 }
+.navigation .nav-link {
+  font-family: Raleway, sans-serif;
+}
